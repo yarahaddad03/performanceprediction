@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 def load_model():
-    with open('C:/Users/lenovo/Desktop/Capstone/saved_steps.pkl', 'rb') as file:
+    with open('saved_steps.pkl', 'rb') as file:
         data=pickle.load(file)
     return data
 
