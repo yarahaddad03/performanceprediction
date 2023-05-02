@@ -3,9 +3,6 @@ import pickle
 import numpy as np
 from PIL import Image
 
-image = Image.open('OSB-ROTATOR-05.png')
-st.image(image, caption='Sunrise by the mountains')
-
 def load_model():
     with open('C:/Users/lenovo/Desktop/Capstone/saved_steps.pkl', 'rb') as file:
         data=pickle.load(file)
@@ -24,7 +21,8 @@ le_Diploma = data["le_Diploma"]
 
 def show_predict_page():
     st.title("Student Performance Prediction")
-    st.image(
+    image = Image.open('OSB-ROTATOR-05.png')
+    st.image(image, caption='Sunrise by the mountains')
 
 show_predict_page()
 
