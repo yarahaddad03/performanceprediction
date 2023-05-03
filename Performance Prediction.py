@@ -3,6 +3,12 @@ import pickle
 import numpy as np
 from PIL import Image
 
+# Load image
+image = Image.open("OSB-ROTATOR-05.png")
+
+# Display image
+st.image(image, caption="My Image", use_column_width=True)
+
 def load_model():
     with open('C:/Users/lenovo/Desktop/Capstone/saved_steps.pkl', 'rb') as file:
         data=pickle.load(file)
